@@ -17,6 +17,24 @@ It injects one `<style data-plugin="dsh-refined-ui">` and adds `data-dsr-*` attr
 
 Works alongside [dsh-lingdong](https://github.com/lishize20040802-rgb/dsh-lingdong) and other UI plugins: it does not touch their classes, pseudo-elements or animations.
 
+## Playful interactions (v0.4.0)
+
+- **Ctrl/Cmd+K command palette**: fuzzy-jump to sessions or run New session / Plugins / Automations; arrows, Enter, Esc (IME-safe).
+- **Pointer spotlight** on session rows and the composer.
+- **Breathing glow** on the composer while the agent works, and a completion ring when it finishes.
+- **Click ripple** and a **magnetic send button**.
+- **Keyboard**: `/` focuses the composer; Alt+Up/Down switches sessions.
+
+All of it honors reduced-motion and is fully removed on disable.
+
+## Bolder (v0.6.0)
+
+- **Edge glow** along the top/left/right of the conversation while the agent runs (thinking, commands and sub-agents all count — it reads DSH's own run state).
+- **Working state**: spinning ring on the send button, embers from the composer, send burst and completion sparkle.
+- **Task windows**: draggable glass windows linked by flowing lines while sub-agents run (Alt+G).
+- **Hologram mode**: the "全息模式" button in the conversation header (or Alt+H) opens a 3D universe. A core sphere (DeepSeek Harness) connects every workspace plus plugins, settings, automations, new session and new workspace; each workspace connects its conversations (collapsed ones are small moons). Open conversations are the real UI — small cards keep the original look, click to centre one and chat in it (about a third of the screen, so branches keep their room). Every conversation forks into commands / sub-agents / changed files, and sub-agents fork the same three ways. It orbits slowly; drag to rotate, Shift/right-drag to pan, wheel to zoom, search to jump. Cards that are working carry a flowing colour edge. Commands and files are read from tool calls DSH already rendered; other sessions appear after they've been opened once.
+- Ctrl+K palette, pointer spotlight, click ripple, magnetic send button, `/` and Alt+Up/Down shortcuts.
+
 ## Install
 
 In the desktop app: **Plugins → Install plugin → Local directory**, choose this folder, then restart. The prebuilt `lib/` is included; no build step.
