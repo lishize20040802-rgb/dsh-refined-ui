@@ -1,0 +1,6 @@
+# dsh-refined-ui bundle patch: one insert registering the dual-face plugin.
+# The row id must match the node half's exported cordis `name`.
+- insert:
+    - id: refined-ui
+      name: 'dsh-refined-ui'
+      config: {}
