@@ -5,12 +5,15 @@
 A CSS-only polish plugin for the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) desktop/web UI. It keeps DSH's own brand blue and layout, and refines everything around it.
 
 - **Calmer neutrals** for light and dark themes (backgrounds, surfaces, three text levels, borders, hover fills, status colors, user bubble, shadows), set through DSH's official `--dsw-*` tokens.
-- **Composer focus halo**: a soft blue ring using DSH's own `--dsw-alias-brand-primary`.
-- **Reading comfort**: roomier line height and paragraph spacing in assistant replies, rounded code blocks.
+- **Composer**: a floating, large-radius card with a soft shadow; on focus a slowly flowing blue gradient hairline and glow appear.
+- **Send button**: a bright blue gradient when usable, lifts on hover, springs on press.
+- **Your messages**: the same soft blue wash as the selected sidebar row, dark text, a small tail corner, rises in on arrival.
+- **Assistant replies**: 15px text, 1.82 line height, roomier paragraphs, rounder code blocks.
+- **Sidebar**: smooth light-blue hover, selected row with a right-fading blue wash.
 - **Quiet motion**: 120–200 ms hover/press feedback at specificity 0, so transitions a component already defines keep winning. All motion is disabled under `prefers-reduced-motion`.
 - **Slim scrollbars** via DSH's scrollbar tokens.
 
-It injects one `<style data-plugin="dsh-refined-ui">` and sets a single `data-dsr-composer` attribute on the composer card. No DOM is restructured, no events are intercepted, no messages are read. Disabling or uninstalling the plugin removes everything.
+It injects one `<style data-plugin="dsh-refined-ui">` and adds `data-dsr-*` attributes to the composer card, send button and user bubble. No DOM is restructured, no events are intercepted, no messages are read. Disabling or uninstalling the plugin removes everything.
 
 Works alongside [dsh-lingdong](https://github.com/lishize20040802-rgb/dsh-lingdong) and other UI plugins: it does not touch their classes, pseudo-elements or animations.
 

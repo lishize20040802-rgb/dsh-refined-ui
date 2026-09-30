@@ -1,6 +1,6 @@
 {
   "name": "dsh-refined-ui",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "DeepSeek Harness dual-face plugin: a refined look for the web UI — calmer neutrals (light + dark), tidier text, and snappier, quieter motion. CSS-only; keeps DSH's own brand blue.",
   "keywords": [
     "dsh-plugin",
